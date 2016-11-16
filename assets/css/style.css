@@ -1,0 +1,46 @@
+
+.content {
+    margin-left: 10%
+}
+#boxes {
+    margin-top: -15px;
+    padding: 0px 0px 0px 0px;
+    overflow-x:hidden;
+}
+.col-xs-5 {
+    color: blueviolet;
+    margin: 15px 10px 0px 10px;
+    height: 400px;
+    padding: 0px 0px 0px 0px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 3px;
+    color: rgba(0,0,0, 0.87);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#sizing_1, #sizing_2, #sizing_3, #sizing_4, #sizing_5, #sizing_6, #sizing_7, #sizing_8 {
+    margin-left: 70px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+#box_1, #box_2, #box_3, #box_4, #box_5, #box_6, #box_7, #box_8 {
+}
+.sidebar-wrapper #sortable {
+    cursor: move;
+}
+.small {
+    width: 48%;
+}
+.medium {
+    width: 98.5%;
+}
+.large {
+    width: 200%;
+    float: left;
+    //*display: inline-block;*//
+}
+
+.sidebar {
+    position: fixed;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
