@@ -299,16 +299,4 @@
     $('#sortable').disableSelection();
     });
 
-    //sort visualizations
-function allowDrop(ev) {
-    ev.preventDefault();
-}
 
-function drag(ev) {
-    ev.dataTransfer.setData("text/html", ev.row.col-sm-6);
-}
-
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text/html");
-    ev.target.appendChild(document.getElementById(data));
