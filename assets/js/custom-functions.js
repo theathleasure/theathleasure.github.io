@@ -42,7 +42,7 @@
     })
     $('#sizing_1 #medium').click(function(){
         $('#box_1 iframe').removeClass();
-        $('#box_1 iframe').addClass('col-lg-6 col-md-6 col-xs-12');
+        $('#box_1 iframe').addClass('col-lg-6 col-md-5 col-xs-12');
         $('#sizing_1 #hide').css( "color", '' );
         $('#sizing_1 #small').css( "color", '' );
         $('#sizing_1 #medium').css( "color", '#409CCD' );
@@ -76,7 +76,7 @@
     })
     $('#sizing_2 #medium').click(function(){
         $('#box_2 iframe').removeClass();
-        $('#box_2 iframe').addClass('col-lg-6 col-md-6 col-xs-12');
+        $('#box_2 iframe').addClass('col-lg-6 col-md-5 col-xs-12');
                 $('#sizing_2 #hide').css( "color", '' );
         $('#sizing_2 #small').css( "color", '' );
         $('#sizing_2 #medium').css( "color", '#409CCD' );
@@ -109,7 +109,7 @@
     })
     $('#sizing_3 #medium').click(function(){
         $('#box_3 iframe').removeClass();
-        $('#box_3 iframe').addClass('col-lg-6 col-md-6 col-xs-12');
+        $('#box_3 iframe').addClass('col-lg-6 col-md-5 col-xs-12');
                 $('#sizing_3 #hide').css( "color", '' );
         $('#sizing_3 #small').css( "color", '' );
         $('#sizing_3 #medium').css( "color", '#409CCD' );
@@ -142,7 +142,7 @@
     })
     $('#sizing_4 #medium').click(function(){
         $('#box_4 iframe').removeClass();
-        $('#box_4 iframe').addClass('col-lg-6 col-md-6 col-xs-12');
+        $('#box_4 iframe').addClass('col-lg-6 col-md-5 col-xs-12');
                 $('#sizing_4 #hide').css( "color", '' );
         $('#sizing_4 #small').css( "color", '' );
         $('#sizing_4 #medium').css( "color", '#409CCD' );
@@ -175,7 +175,7 @@
     })
     $('#sizing_5 #medium').click(function(){
         $('#box_5 iframe').removeClass();
-        $('#box_5 iframe').addClass('col-lg-6 col-md-6 col-xs-12');
+        $('#box_5 iframe').addClass('col-lg-6 col-md-5 col-xs-12');
         $('#box_5 .col-xs-6').css( "height", "400px" );
                 $('#sizing_5 #hide').css( "color", '' );
         $('#sizing_5 #small').css( "color", '' );
@@ -211,7 +211,7 @@
     })
     $('#sizing_6 #medium').click(function(){
         $('#box_6 iframe').removeClass();
-        $('#box_6 iframe').addClass('col-lg-6 col-md-6 col-xs-12');
+        $('#box_6 iframe').addClass('col-lg-6 col-md-5 col-xs-12');
                 $('#sizing_6 #hide').css( "color", '' );
         $('#sizing_6 #small').css( "color", '' );
         $('#sizing_6 #medium').css( "color", '#409CCD' );
@@ -244,7 +244,7 @@
     })
     $('#sizing_7 #medium').click(function(){
         $('#box_7 iframe').removeClass();
-        $('#box_7 iframe').addClass('col-lg-6 col-md-6 col-xs-12');
+        $('#box_7 iframe').addClass('col-lg-6 col-md-5 col-xs-12');
                 $('#sizing_7 #hide').css( "color", '' );
         $('#sizing_7 #small').css( "color", '' );
         $('#sizing_7 #medium').css( "color", '#409CCD' );
@@ -277,7 +277,7 @@
     })
     $('#sizing_8 #medium').click(function(){
         $('#box_8 iframe').removeClass();
-        $('#box_8 iframe').addClass('col-lg-6 col-md-6 col-xs-12');
+        $('#box_8 iframe').addClass('col-lg-6 col-md-5 col-xs-12');
                 $('#sizing_8 #hide').css( "color", '' );
         $('#sizing_8 #small').css( "color", '' );
         $('#sizing_8 #medium').css( "color", '#409CCD' );
