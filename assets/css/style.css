@@ -1,9 +1,5 @@
-
-.content {
-    margin-left: 10%;
-}
 #boxes {
-    min-height: 90%;
+    min-height: 850px;
     min-width: 90%;
     padding: 0px 0px 10px 0px;
     overflow-x:hidden;
@@ -15,7 +11,8 @@
     cursor: pointer;
 }
 #box_1, #box_2, #box_3, #box_4, #box_5, #box_6, #box_7, #box_8 {
-    height: 40%;
+    min-height: 400px;
+    height: 45%
 }
 iframe {
     width: 100%;
@@ -38,5 +35,5 @@ iframe {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .main-panel {
-    min-height: 100%;
+    min-height: 900px;
 }
