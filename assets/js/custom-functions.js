@@ -300,11 +300,15 @@
     });
 
     //sort visualizations
-function handleDragStart(e) {
-  this.style.border = '3px dotted black';
+function allowDrop(ev) {
+    ev.preventDefault();
 }
 
-var cols = document.querySelectorAll('#row .col-sm-12');
-[].forEach.call(cols, function(col) {
-  col.addEventListener('dragstart', handleDragStart, false);
-});
+function drag(ev) {
+    ev.dataTransfer.setData("text/html", ev.row.col-sm-6);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text/html");
+    ev.target.appendChild(document.getElementById(data));
