@@ -27,18 +27,13 @@
 .sidebar-wrapper #sortable {
     cursor: move;
 }
-.small {
-    width: 48%;
-}
-.medium {
-    width: 98.5%;
-}
-.large {
-    width: 200%;
-    float: left;
+
     //*display: inline-block;*//
 }
-
+.hide {
+    height: 0px;
+    width: 0px;
+}
 .sidebar {
     position: fixed;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
