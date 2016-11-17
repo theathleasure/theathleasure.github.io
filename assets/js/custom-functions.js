@@ -67,7 +67,7 @@
         $('#box_2 .col-xs-6').css( "height", "0px", "width", "0px" );
                 $('#sizing_2 #hide').css( "color", '#409CCD' );
         $('#sizing_2 #small').css( "color", '' );
-        $('#sizing_1 #medium').css( "color", '' );
+        $('#sizing_2 #medium').css( "color", '' );
         $('#sizing_2 #large').css( "color", '' );
     })                     
     $('#sizing_2 #small').click(function(){
