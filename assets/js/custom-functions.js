@@ -301,7 +301,7 @@
 
     //sort visualizations
 function handleDragStart(e) {
-  this.style.size = '60%';
+  this.style.opacity = '0.4';
 }
 
 var cols = document.querySelectorAll('#row .col-sm-12');
