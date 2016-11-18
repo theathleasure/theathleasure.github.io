@@ -38,3 +38,10 @@ iframe {
 .main-panel {
     min-height: 900px;
 }
+li {
+    list-style-image: url('https://raw.githubusercontent.com/theathleasure/theathleasure.github.io/master/assets/img/ic_open_with_black_24dp_1x.png');
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
