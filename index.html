@@ -1,226 +1,137 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8" />
-	<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
-	<title>Material Dashboard</title>
-
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Material Dashboard</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-
     <!-- Bootstrap core CSS     -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!--  Material Dashboard CSS    -->
-    <link href="assets/css/material-dashboard.css" rel="stylesheet"/>
-    
-    <!-- My style CSS -->
-    <link href="assets/css/style.css" rel="stylesheet"/>
-
+    <!--  Custom CSS    -->
+    <link href="assets/css/material-dashboard.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
     <!--     Fonts and icons     -->
     <script src="https://use.fontawesome.com/9eeb6875a2.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> </head>
 
 <body>
     <!-- Sidebar -->
-
-	    <div class="sidebar" data-color="blue" data-image="assets/img/background_400x800.jpg">
-
-			<div class="logo">
-				<!--<a href=# class="simple-text">-->
+    <div class="sidebar" data-color="blue" data-image=>
+        <div class="logo">
+            <!--<a href=# class="simple-text">-->
+            <li> <img src="logo-placeholder.png" width=120px> </li>
+        </div>
+        <div class="sidebar-wrapper">
+            <ul class="nav">
                 <li>
-					<img src="logo-placeholder.png" width=120px >
+                    <a id='btn_1'> <i class="material-icons">equalizer</i>
+                        <p>Onhand Inventory $
+                            <br> <span style="margin-left:3em">(Sorted by Sales Qty)</span></p>
+                    </a>
+                    <div class="row" id="sizing_1" style="display: none"> <i class="material-icons" id="hide">visibility_off</i> <i class="material-icons" id="small">photo_size_select_small</i> <i class="material-icons" id="medium">photo_size_select_large</i> <i class="material-icons" id="large">photo_size_select_actual</i> </div>
                 </li>
-			</div>
-            
-            
-	    	<div class="sidebar-wrapper">
-	            <ul class="nav">
-                    <!-- id='sortable' -->
-                    
-                    
-                    <li>
-	                    <a id='btn_1'>
-	                        <i class="material-icons">equalizer</i>
-                            <p>Onhand Inventory $<br>
-                                <span style="margin-left:3em">(Sorted by Sales Qty)</span></p>
-	                    </a>
-                            <div class="row" id="sizing_1" style="display: none">
-                                <i class="material-icons" id="hide">visibility_off</i>
-                                <i class="material-icons" id="small">photo_size_select_small</i>
-                                <i class="material-icons" id="medium">photo_size_select_large</i>
-                                <i class="material-icons" id="large">photo_size_select_actual</i>
-                            </div>
-                    </li>
-                    
-                    
-	                <li>
-	                    <a id='btn_2'>
-                            <i class="material-icons">pie_chart</i>	             
-                            <p>Expenses as % Sales</p>
-	                    </a>
-                            <div class="row" id="sizing_2" style="display: none">
-                                <i class="material-icons" id="hide">visibility_off</i>
-                                <i class="material-icons" id="small">photo_size_select_small</i>
-                                <i class="material-icons" id="medium">photo_size_select_large</i>
-                                <i class="material-icons" id="large">photo_size_select_actual</i>
-                            </div>
-	                </li>
-                    
-                    
-	                <li>
-	                    <a id='btn_3'>
-	                        <i class="material-icons">show_chart</i>
-	                        <p>AR Trend</p>
-	                    </a>
-                            <div class="row" id="sizing_3" style="display: none">
-                                <i class="material-icons" id="hide">visibility_off</i>
-                                <i class="material-icons" id="small">photo_size_select_small</i>
-                                <i class="material-icons" id="medium">photo_size_select_large</i>
-                                <i class="material-icons" id="large">photo_size_select_actual</i>
-                            </div>
-	                </li>
-                    
-                    
-	                <li>
-	                    <a id='btn_4'>
-	                        <i class="material-icons">border_all</i>
-	                        <p>Filters sheet</p>
-	                    </a>
-                            <div class="row" id="sizing_4" style="display: none">
-                                <i class="material-icons" id="hide">visibility_off</i>
-                                <i class="material-icons" id="small">photo_size_select_small</i>
-                                <i class="material-icons" id="medium">photo_size_select_large</i>
-                                <i class="material-icons" id="large">photo_size_select_actual</i>
-                            </div>
-	                </li>
-                    
-                    
-                    <li>
-	                    <a id='btn_5'>
-	                        <i class="material-icons">view_compact</i>
-	                        <p>Revenue by Product*</p>
-	                    </a>
-                            <div class="row" id="sizing_5" style="display: none">
-                                <i class="material-icons" id="hide">visibility_off</i>
-                                <i class="material-icons" id="small">photo_size_select_small</i>
-                                <i class="material-icons" id="medium">photo_size_select_large</i>
-                                <i class="material-icons" id="large">photo_size_select_actual</i>
-                            </div>
-                    </li>
-                    
-                    
-	                <li>
-	                    <a id='btn_6'>
-                            <i class="material-icons">multiline_chart</i>  
-                            <p>Empty</p>
-	                    </a>
-                            <div class="row" id="sizing_6" style="display: none">
-                                <i class="material-icons" id="hide">visibility_off</i>
-                                <i class="material-icons" id="small">photo_size_select_small</i>
-                                <i class="material-icons" id="medium">photo_size_select_large</i>
-                                <i class="material-icons" id="large">photo_size_select_actual</i>
-                            </div>
-	                </li>
-                    
-                    
-	                <li>
-	                    <a id='btn_7'>
-	                        <i class="material-icons">pie_chart_outlined</i>
-	                        <p>Empty</p>
-	                    </a>
-                        <div class="row" id="sizing_7" style="display: none">
-                                <i class="material-icons" id="hide">visibility_off</i>
-                                <i class="material-icons" id="small">photo_size_select_small</i>
-                                <i class="material-icons" id="medium">photo_size_select_large</i>
-                                <i class="material-icons" id="large">photo_size_select_actual</i>
-                            </div>
-	                </li>
-                    
-                    
-	                <li>
-	                    <a id='btn_8'>
-	                        <i class="material-icons">bubble_chart</i>
-	                        <p>Empty</p>
-	                    </a>
-                        <div class="row" id="sizing_8" style="display: none">
-                                <i class="material-icons" id="hide">visibility_off</i>
-                                <i class="material-icons" id="small">photo_size_select_small</i>
-                                <i class="material-icons" id="medium">photo_size_select_large</i>
-                                <i class="material-icons" id="large">photo_size_select_actual</i>
-                            </div>
-	                </li>
-                    
-                    
-	            </ul>
-	    	</div>
-	    </div>
-        
-    <!-- ./Sidebar -->
-        
-    <!-- topbar -->
-
-	    <div class="main-panel">
-			<nav class="navbar navbar-transparent navbar-absolute">
-				<div class="container-fluid">
-                    <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        </button>
-                    </div>
-					<div class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav navbar-left">
+                <li>
+                    <a id='btn_2'> <i class="material-icons">pie_chart</i>
+                        <p>Expenses as % Sales</p>
+                    </a>
+                    <div class="row" id="sizing_2" style="display: none"> <i class="material-icons" id="hide">visibility_off</i> <i class="material-icons" id="small">photo_size_select_small</i> <i class="material-icons" id="medium">photo_size_select_large</i> <i class="material-icons" id="large">photo_size_select_actual</i> </div>
+                </li>
+                <li>
+                    <a id='btn_3'> <i class="material-icons">show_chart</i>
+                        <p>AR Trend</p>
+                    </a>
+                    <div class="row" id="sizing_3" style="display: none"> <i class="material-icons" id="hide">visibility_off</i> <i class="material-icons" id="small">photo_size_select_small</i> <i class="material-icons" id="medium">photo_size_select_large</i> <i class="material-icons" id="large">photo_size_select_actual</i> </div>
+                </li>
+                <li>
+                    <a id='btn_4'> <i class="material-icons">border_all</i>
+                        <p>Filters sheet</p>
+                    </a>
+                    <div class="row" id="sizing_4" style="display: none"> <i class="material-icons" id="hide">visibility_off</i> <i class="material-icons" id="small">photo_size_select_small</i> <i class="material-icons" id="medium">photo_size_select_large</i> <i class="material-icons" id="large">photo_size_select_actual</i> </div>
+                </li>
+                <li>
+                    <a id='btn_5'> <i class="material-icons">view_compact</i>
+                        <p>Revenue by Product*</p>
+                    </a>
+                    <div class="row" id="sizing_5" style="display: none"> <i class="material-icons" id="hide">visibility_off</i> <i class="material-icons" id="small">photo_size_select_small</i> <i class="material-icons" id="medium">photo_size_select_large</i> <i class="material-icons" id="large">photo_size_select_actual</i> </div>
+                </li>
+                <li>
+                    <a id='btn_6'> <i class="material-icons">multiline_chart</i>
+                        <p>Empty</p>
+                    </a>
+                    <div class="row" id="sizing_6" style="display: none"> <i class="material-icons" id="hide">visibility_off</i> <i class="material-icons" id="small">photo_size_select_small</i> <i class="material-icons" id="medium">photo_size_select_large</i> <i class="material-icons" id="large">photo_size_select_actual</i> </div>
+                </li>
+                <li>
+                    <a id='btn_7'> <i class="material-icons">pie_chart_outlined</i>
+                        <p>Empty</p>
+                    </a>
+                    <div class="row" id="sizing_7" style="display: none"> <i class="material-icons" id="hide">visibility_off</i> <i class="material-icons" id="small">photo_size_select_small</i> <i class="material-icons" id="medium">photo_size_select_large</i> <i class="material-icons" id="large">photo_size_select_actual</i> </div>
+                </li>
+                <li>
+                    <a id='btn_8'> <i class="material-icons">bubble_chart</i>
+                        <p>Empty</p>
+                    </a>
+                    <div class="row" id="sizing_8" style="display: none"> <i class="material-icons" id="hide">visibility_off</i> <i class="material-icons" id="small">photo_size_select_small</i> <i class="material-icons" id="medium">photo_size_select_large</i> <i class="material-icons" id="large">photo_size_select_actual</i> </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Top navbar -->
+    <div class="main-panel">
+        <nav class="navbar navbar-transparent navbar-absolute">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
                         <ul class="nav navbar-nav navbar-left">
                             <li><a href="page-one.html">Page One</a></li>
                             <li><a href="page-two.html">Page Two</a></li>
-                            <li style="color: #409CCD"><a href="index.html">Custom Page</a></li>
-                            <li><a href="https://www.google.com">Help</a></li>
+                            <li style="color: #0075c4"><a href="index.html">Custom Page</a></li>
+                            <li><a id="help">Help</a></li>
                         </ul>
-					</div>	
-			</div>
-			</nav>
-    <!-- ./Topbar --> 
-
-    <!-- Charts -->
-            <div class="content">
-                <ul class="row col-lg-12 col-md-12 col-sm-12" id="boxes">
-                <ul id='sortable'>
-                        <li class="col-lg-6 col-md-6 col-sm-12" draggable="true" id="box_1">
-                            <iframe src='https://sense-demo.qlik.com/single/?appid=133dab5d-8f56-4d40-b3e0-a6b401391bde&obj=PAppmU&select=clearall' style='border:none;'></iframe>
-                        </li>
-                        <li class="col-lg-6 col-md-6 col-sm-12" draggable="true" id="box_2">
-                            <iframe src='https://sense-demo.qlik.com/single/?appid=133dab5d-8f56-4d40-b3e0-a6b401391bde&obj=rJFbvG&select=clearall' style='border:none;'></iframe>
-                        </li>
-                        <li class="col-lg-6 col-md-6 col-sm-12" draggable="true" id="box_3">
-                            <iframe src='https://sense-demo.qlik.com/single/?appid=133dab5d-8f56-4d40-b3e0-a6b401391bde&obj=hRZaKk&select=clearall' style='border:none;'></iframe>
-                        </li>
-                        <li class="col-lg-6 col-md-6 col-sm-12" draggable="true" id="box_4">
-                            <iframe src='https://sense-demo.qlik.com/single/?appid=133dab5d-8f56-4d40-b3e0-a6b401391bde&obj=rJFbvG&select=clearall' style='border:none;'></iframe>
-                        </li>
-                </ul>
-                </ul>
-            </div>
-        <!--./Charts-->
                 </div>
-		</div>
-	
-
+            </div>
+        </nav>
+        <div class="content">
+            <!-- Charts -->
+            <ul class="row col-lg-12 col-md-12 col-sm-12" id="boxes">
+                <ul id='sortable'>
+                    <li class="col-lg-6 col-md-6 col-sm-12" draggable="true" id="box_1">
+                        <iframe src='https://sense-demo.qlik.com/single/?appid=133dab5d-8f56-4d40-b3e0-a6b401391bde&obj=PAppmU&select=clearall' style='border:none;'></iframe>
+                    </li>
+                    <li class="col-lg-6 col-md-6 col-sm-12" draggable="true" id="box_2">
+                        <iframe src='https://sense-demo.qlik.com/single/?appid=133dab5d-8f56-4d40-b3e0-a6b401391bde&obj=rJFbvG&select=clearall' style='border:none;'></iframe>
+                    </li>
+                    <li class="col-lg-6 col-md-6 col-sm-12" draggable="true" id="box_3">
+                        <iframe src='https://sense-demo.qlik.com/single/?appid=133dab5d-8f56-4d40-b3e0-a6b401391bde&obj=hRZaKk&select=clearall' style='border:none;'></iframe>
+                    </li>
+                    <li class="col-lg-6 col-md-6 col-sm-12" draggable="true" id="box_4">
+                        <iframe src='https://sense-demo.qlik.com/single/?appid=133dab5d-8f56-4d40-b3e0-a6b401391bde&obj=rJFbvG&select=clearall' style='border:none;'></iframe>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+        <!-- Help popup -->
+        <div class="help" style="display: none">
+            <h2>HELLO IM THE HELP THING</h2>
+            <h5>HELLO IM THE HELP THING</h5>
+            <p>HELLO IM THE HELP THING</p>
+            <p>HELLO IM THE HELP THING</p>
+            <p>HELLO IM THE HELP THING</p>
+        </div>
+    </div>
 </body>
-
-	<!--   Core JS Files   -->
-	<script src="assets/js/jquery-3.1.0.min.js" type="text/javascript"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="assets/js/material.min.js" type="text/javascript"></script>
-
-	<!-- Material Dashboard javascript methods -->
-	<script src="assets/js/material-dashboard.js"></script>
-    <script src="assets/js/custom-functions.js"></script>
+<!--   Core JS Files   -->
+<script src="assets/js/jquery-3.1.0.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/material.min.js" type="text/javascript"></script>
+<!-- Custom javascript -->
+<script src="assets/js/material-dashboard.js"></script>
+<script src="assets/js/custom-functions.js"></script>
 
 </html>

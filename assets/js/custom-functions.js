@@ -292,11 +292,13 @@
         $('#sizing_8 #large').css( "color", '#409CCD' );
     })
     
-    //sortable menu
+    $('#help').click(function(){
+        $('.help').toggle();
+    });
+    
+    //sortable viz
     
     $(function() {
     $('#sortable').sortable();
     $('#sortable').disableSelection();
     });
-
-
