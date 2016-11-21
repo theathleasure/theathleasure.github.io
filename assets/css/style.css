@@ -1,8 +1,19 @@
-#boxes {
-    min-height: 850px;
-    min-width: 90%;
-    padding: 0px 0px 10px 0px;
-    overflow-x: hidden;
+/* Top Navbar */
+
+#help {
+    cursor: pointer;
+}
+
+
+/* Sidenav */
+
+.sidebar-wrapper {
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 #sizing_1,
@@ -15,6 +26,32 @@
 #sizing_8 {
     margin-left: 70px;
     margin-top: -5px;
+}
+
+hr {
+    width: 80%;
+}
+
+a {
+    color: darkgrey;
+}
+
+
+/* Charts */
+
+.main-panel {
+    min-height: 900px;
+}
+
+li {
+    list-style-type: none;
+}
+
+#boxes {
+    min-height: 850px;
+    min-width: 90%;
+    padding: 0px 0px 10px 0px;
+    overflow-x: hidden;
 }
 
 #box_1,
@@ -38,30 +75,59 @@ iframe {
     border-radius: 3px;
     color: rgba(0, 0, 0, 0.87);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
 }
 
-.sidebar-wrapper {
-    cursor: pointer;
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+}
 .hide {
     height: 0px;
     width: 0px;
 }
 
-.sidebar {
-    position: fixed;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
-.main-panel {
-    min-height: 900px;
-}
-
-li {
-    list-style-type: none;
-}
-
+/* Help */
 .help {
     position: fixed;
     left: 25%;
@@ -72,15 +138,4 @@ li {
     opacity: 0.9;
     background-color: white;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-}
-
-#help {
-    cursor: pointer;
-}
-
-hr {
-    width: 80%;
-}
-a {
-    color: darkgrey;
 }
