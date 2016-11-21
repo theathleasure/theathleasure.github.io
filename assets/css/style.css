@@ -2,17 +2,33 @@
     min-height: 850px;
     min-width: 90%;
     padding: 0px 0px 10px 0px;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
-#sizing_1, #sizing_2, #sizing_3, #sizing_4, #sizing_5, #sizing_6, #sizing_7, #sizing_8 {
+#sizing_1,
+#sizing_2,
+#sizing_3,
+#sizing_4,
+#sizing_5,
+#sizing_6,
+#sizing_7,
+#sizing_8 {
     margin-left: 70px;
     margin-top: -5px;
 }
-#box_1, #box_2, #box_3, #box_4, #box_5, #box_6, #box_7, #box_8 {
+
+#box_1,
+#box_2,
+#box_3,
+#box_4,
+#box_5,
+#box_6,
+#box_7,
+#box_8 {
     min-height: 400px;
     height: 45%
 }
+
 iframe {
     width: 100%;
     min-height: 390px;
@@ -20,37 +36,51 @@ iframe {
     padding: 0px 0px 0px 0px;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
     border-radius: 3px;
-    color: rgba(0,0,0, 0.87);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
+
 .sidebar-wrapper {
     cursor: pointer;
 }
+
 .hide {
     height: 0px;
     width: 0px;
 }
+
 .sidebar {
     position: fixed;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
+
 .main-panel {
     min-height: 900px;
 }
+
 li {
     list-style-type: none;
 }
+
 .help {
     position: fixed;
     left: 25%;
     top: 25%;
     width: 50%;
     height: 50%;
-    color:black;
+    color: black;
     opacity: 0.9;
     background-color: white;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
+
 #help {
     cursor: pointer;
+}
+
+hr {
+    width: 80%;
+}
+a {
+    color: darkgrey;
 }
