@@ -296,9 +296,20 @@
         $('.help').toggle();
     });
     
-    //sortable viz
-    
+    //Sortable elements
+
+    //Getter
+    var grid = $( ".selector" ).sortable( "option", "grid" );
+    var tolerance = $( ".selector" ).sortable( "option", "tolerance" );
+
     $(function() {
-    $('#sortable').sortable();
+    $('#sortable').sortable({
+        grid: [ 30, 15 ], tolerance: "intersect"
+    });
+        
     $('#sortable').disableSelection();
     });
+
+    //Setter
+    $( ".selector" ).sortable( "option", "grid", [ 30, 15 ] );
+    $( ".selector" ).sortable( "option", "tolerance", "pointer" );
