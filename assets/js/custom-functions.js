@@ -1,26 +1,26 @@
     $('#btn_1').click(function(){
-        $('#sizing_1').toggle();
+        $('#sizing_1').toggle("drop");
     })
     $('#btn_2').click(function(){
-        $('#sizing_2').toggle();
+        $('#sizing_2').toggle("drop");
     })
     $('#btn_3').click(function(){
-        $('#sizing_3').toggle();
+        $('#sizing_3').toggle("drop");
     })
     $('#btn_4').click(function(){
-        $('#sizing_4').toggle();
+        $('#sizing_4').toggle("drop");
     })
     $('#btn_5').click(function(){
-        $('#sizing_5').toggle();
+        $('#sizing_5').toggle("drop");
     })
     $('#btn_6').click(function(){
-        $('#sizing_6').toggle();
+        $('#sizing_6').toggle("drop");
     })
     $('#btn_7').click(function(){
-        $('#sizing_7').toggle();
+        $('#sizing_7').toggle("drop");
     })
     $('#btn_8').click(function(){
-        $('#sizing_8').toggle();
+        $('#sizing_8').toggle("drop");
     })
     
 // Resize the box with buttons
@@ -264,7 +264,7 @@
     //Function
     $(function() {
     $('#sortable').sortable({
-        grid: [ 30, 15 ], 
+        grid: [ 20, 10 ], 
         tolerance: "pointer",  
         }).disableSelection();
     });
