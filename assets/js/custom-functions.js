@@ -284,8 +284,8 @@
     //Function
     $(function() {
     $('#sortable').sortable({
-        helper: 'clone'
-        opacity: 0.7
+        helper: 'clone',
+        opacity: 0.7,
         tolerance: "pointer", 
         }).disableSelection();
     });
