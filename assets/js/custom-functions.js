@@ -289,5 +289,5 @@
         tolerance: "pointer", 
         }).disableSelection();
     });
-
+    $('#sortable').sortable('disable');
     //Setter
