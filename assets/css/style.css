@@ -84,6 +84,24 @@ iframe {
     -o-animation: fadein 2s;
     /* Opera */
 }
+.Placeholder {
+    background: darkgrey;
+    width: 100%;
+    min-height: 390px;
+    height: 43%;
+    padding: 0px 0px 0px 0px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+}
 
 @keyframes fadein {
     from {
