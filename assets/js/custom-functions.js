@@ -284,8 +284,10 @@
     //Function
     $(function() {
     $('#sortable').sortable({
-        grid: [ 20, 10 ], 
-        tolerance: "pointer",  
+        revert: true,
+        placeholder: 'Placeholder',
+        tolerance: "pointer", 
+        revert: 50,  
         }).disableSelection();
     });
 
