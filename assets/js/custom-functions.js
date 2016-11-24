@@ -285,7 +285,8 @@
     $(function() {
     $('#sortable').sortable({
         revert: true,
-        placeholder: 'Placeholder',
+        placeholder: 'sortable-placeholder',
+        opacity: 0.6,
         tolerance: "pointer", 
         revert: 50,  
         }).disableSelection();
