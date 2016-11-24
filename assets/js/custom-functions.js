@@ -260,7 +260,7 @@
     })
     //Sort Charts
         $('#sorting_ #editchart').click(function(){
-        $('box_1, box_2, box_3, box_4').attr('draggable', 'false');
+        $('iframe').attr('draggable', 'false');
         $('#box_1, #box_2, #box_3, #box_4').css({'position': ''});
         $('iframe').css({'background': '', 'z-index': '', 'position': ''});
         
@@ -269,7 +269,7 @@
     }) 
         
         $('#sorting_ #sortcharts').click(function(){
-        $('box_1, box_2, box_3, box_4').attr('draggable', 'true');
+        $('iframe').attr('draggable', 'true');
         $('#box_1, #box_2, #box_3, #box_4').css({'position': 'relative'});
         $('iframe').css({'background': 'rgba(0,0,0,0.4)', 'z-index': '-1000', 'position': 'relative'});
         
