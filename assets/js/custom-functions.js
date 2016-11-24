@@ -269,25 +269,17 @@
     }) 
         
         $('#sorting_ #sortcharts').click(function(){
-            $('#sortable').sortable('enable');
-        $('#box_1, #box_2, #box_3, #box_4').css({'position': 'relative'});
-        $('iframe').css({'background': 'rgba(0,0,0,0.4)', 'z-index': '-1000', 'position': 'relative'});
-        
-        $('#sorting_ #editchart, #sorting_ #fullscreenchart').css( 'color', '' );
-        $('#sorting_ #sortcharts').css( 'color', '#409CCD' );
-    }) 
-    
-    //Sortable viz
-
-    //Getter
-    
-    //Function
-    $(function() {
-    $('#sortable').sortable({
+                $(function() {
+        $('#sortable').sortable({
         helper: 'clone',
         opacity: 0.7,
         tolerance: "pointer", 
         }).disableSelection();
     });
     $('#sortable').sortable('disable');
-    //Setter
+        $('#box_1, #box_2, #box_3, #box_4').css({'position': 'relative'});
+        $('iframe').css({'background': 'rgba(0,0,0,0.4)', 'z-index': '-1000', 'position': 'relative'});
+        
+        $('#sorting_ #editchart, #sorting_ #fullscreenchart').css( 'color', '' );
+        $('#sorting_ #sortcharts').css( 'color', '#409CCD' );
+    }) 
