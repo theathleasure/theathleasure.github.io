@@ -22,7 +22,9 @@
     $('#btn_8').click(function(){
         $('#sizing_8').toggle("drop");
     })
-    
+    $('#sorting').click(function(){
+        $('#sorting_').toggle("drop");
+    })
 // Resize the box with buttons
     //1
     $('#sizing_1 #hide').click(function(){
