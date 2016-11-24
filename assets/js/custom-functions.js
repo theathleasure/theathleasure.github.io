@@ -260,7 +260,7 @@
     })
     //Sort Charts
         $('#sorting_ #editchart').click(function(){
-            $('#sortable').sortable('disable');
+            $('#sortable').sortable('enable');
         $('#box_1, #box_2, #box_3, #box_4').css({'position': ''});
         $('iframe').css({'background': '', 'z-index': '', 'position': ''});
         
@@ -269,13 +269,6 @@
     }) 
         
         $('#sorting_ #sortcharts').click(function(){
-                $(function() {
-        $('#sortable').sortable({
-        helper: 'clone',
-        opacity: 0.7,
-        tolerance: "pointer", 
-        }).disableSelection();
-    });
     $('#sortable').sortable('disable');
         $('#box_1, #box_2, #box_3, #box_4').css({'position': 'relative'});
         $('iframe').css({'background': 'rgba(0,0,0,0.4)', 'z-index': '-1000', 'position': 'relative'});
@@ -283,3 +276,11 @@
         $('#sorting_ #editchart, #sorting_ #fullscreenchart').css( 'color', '' );
         $('#sorting_ #sortcharts').css( 'color', '#409CCD' );
     }) 
+
+    $(function() {
+        $('#sortable').sortable({
+        helper: 'clone',
+        opacity: 0.7,
+        tolerance: "pointer", 
+        }).disableSelection();
+    });
