@@ -260,25 +260,16 @@
     })
     //Sort Charts
         $('#sorting_ #editchart').click(function(){
+        $('box_1, box_2, box_3, box_4').attr('draggable', 'false');
         $('#box_1, #box_2, #box_3, #box_4').css({'position': ''});
         $('iframe').css({'background': '', 'z-index': '', 'position': ''});
         
         $('#sorting_ #fullscreenchart, #sorting_ #sortcharts').css( 'color', '' );
         $('#sorting_ #editchart').css( 'color', '#409CCD' );
-    }) 
-        
-        $('#sorting_ #fullscreenchart').click(function(){
-        $('#box_1, #box_2, #box_3, #box_4').css({'position': ''});
-        $('iframe').css({'background': '', 'z-index': '', 'position': ''});
-        
-        $('#sorting_ #fullscreenchart, #sorting_ #sortcharts').css( 'color', '' );
-        $('#sorting_ #editchart').css( 'color', '#409CCD' );
-        
-        $('#sorting_ #editchart, #sorting_ #sortcharts').css( 'color', '' );
-        $('#sorting_ #fullscreenchart').css( 'color', '#409CCD' );
     }) 
         
         $('#sorting_ #sortcharts').click(function(){
+        $('box_1, box_2, box_3, box_4').attr('draggable', 'true');
         $('#box_1, #box_2, #box_3, #box_4').css({'position': 'relative'});
         $('iframe').css({'background': 'rgba(0,0,0,0.4)', 'z-index': '-1000', 'position': 'relative'});
         
