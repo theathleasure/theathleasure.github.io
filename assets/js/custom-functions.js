@@ -260,7 +260,7 @@
     })
     //Sort Charts
         $('#sorting_ #editchart').click(function(){
-        $('#boxes ul').attr('id', 'unsortable');
+        $('#boxes ul').attr('id', '');
         $('#box_1, #box_2, #box_3, #box_4').css({'position': ''});
         $('iframe').css({'background': '', 'z-index': '', 'position': ''});
         
