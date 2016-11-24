@@ -284,11 +284,9 @@
     //Function
     $(function() {
     $('#sortable').sortable({
-        revert: true,
-        placeholder: 'sortable-placeholder',
-        opacity: 0.6,
+        helper: 'clone'
+        opacity: 0.7
         tolerance: "pointer", 
-        revert: 50,  
         }).disableSelection();
     });
 
