@@ -262,6 +262,7 @@
         $('#sorting_ #editchart').click(function(){
         $('#boxes ul').attr('id', '');
         $('#boxes ul').attr('class', '');
+        $('#box_1, #box_2, #box_3, #box_4').removeAttr('class', 'ui-sortable-handle');
         $('#box_1, #box_2, #box_3, #box_4').css({'position': ''});
         $('iframe').css({'background': '', 'z-index': '', 'position': ''});
         
@@ -272,6 +273,7 @@
         $('#sorting_ #sortcharts').click(function(){
         $('#boxes ul').attr('id', 'sortable');
         $('#boxes ul').attr('class', 'ui-sortable');
+        $('#box_1, #box_2, #box_3, #box_4').attr('class', 'ui-sortable-handle');
         $('#box_1, #box_2, #box_3, #box_4').css({'position': 'relative'});
         $('iframe').css({'background': 'rgba(0,0,0,0.4)', 'z-index': '-1000', 'position': 'relative'});
         
